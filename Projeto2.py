@@ -10,7 +10,4 @@ requi_dic = requi.json()
 descricao = requi_dic["weather"][0]["description"]
 temp = requi_dic['main']['temp'] - 273.15
 
-print(descricao, "-" '{:.1f}'.format(temp))
-
-
-
+print(descricao, '{:.1f}'.format(temp))
